@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #003366;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#questionBox, #answerBox {
+  margin: 15px 0;
+  font-size: 1.3em;
+  color: #222;
+  min-height: 60px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#savedBox {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  text-align: left;
+  font-size: 0.95em;
+}
