@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,6 +11,13 @@
 <body>
   <div class="container">
     <h1>Вопрос, который меняет всё</h1>
+    <label for="topicSelect">Выбери тему:</label>
+    <select id="topicSelect" onchange="changeTopic(this.value)">
+      <option>Восприятие</option>
+      <option>Страх</option>
+      <option>Цель</option>
+    </select>
+    <h3 id="currentTopic">Восприятие</h3>
     <div id="questionBox">Нажми, чтобы получить вопрос</div>
     <button onclick="newQuestion()">Хочу другой вопрос</button>
     <button onclick="getHint()">Получить подсказку</button>
