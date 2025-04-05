@@ -12,7 +12,9 @@
     <h1>Вопрос, который меняет всё</h1>
     <div id="questionBox">Нажми, чтобы получить вопрос</div>
     <button onclick="newQuestion()">Хочу другой вопрос</button>
-    <button onclick="getAnswer()">Готов получить ответ</button>
+    <button onclick="getHint()">Получить подсказку</button>
+    <textarea id="userAnswer" placeholder="Мой ответ..." rows="3"></textarea>
+    <button onclick="saveUserAnswer()">Сохранить как озарение</button>
     <div id="answerBox"></div>
     <button onclick="viewSaved()">Мои озарения</button>
     <div id="savedBox"></div>
