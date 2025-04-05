@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вопрос, который меняет всё</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Вопрос, который меняет всё</h1>
+    <div id="questionBox">Нажми, чтобы получить вопрос</div>
+    <button onclick="newQuestion()">Хочу другой вопрос</button>
+    <button onclick="getHint()">Получить подсказку</button>
+    <textarea id="userAnswer" placeholder="Мой ответ..." rows="3"></textarea>
+    <button onclick="saveUserAnswer()">Сохранить как озарение</button>
+    <div id="answerBox"></div>
+    <button onclick="viewSaved()">Мои озарения</button>
+    <div id="savedBox"></div>
+  </div>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
